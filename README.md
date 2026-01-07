@@ -1,6 +1,5 @@
-Improving Temporal and Spatial Coverage of UK Black Carbon Measurements
-Applying a Machine Learning Approach (Paper 1)
-This repository contains the R code and data processing pipeline for Paper 1 of my PhD thesis. It uses a machine learning approach (Stacked Ensemble of Random Forest and XGBoost) to estimate missing Black Carbon (BC) data at Urban and Rural Background sites across the UK.
+Improving Temporal and Spatial Coverage of UK Black Carbon Measurements Applying a Machine Learning Approach
+This repository contains the R code and data processing pipeline for this article. It uses a machine learning approach (Stacked Ensemble of Random Forest and XGBoost) to estimate missing Black Carbon (BC) data at Urban and Rural Background sites across the UK between 2009 and 2020.
 
 📂 Repository Structure
 The project is organized into three main folders:
@@ -23,6 +22,8 @@ The scripts are numbered sequentially. Please run them in the following order:
 
 01b_Download_Data&DataSites_RB.R: Downloads air quality monitoring data for Rural Background (RB) sites.
 
+
+
 2. Weather Data Processing
 02_Process_Weather_Data.R: Extracts meteorological variables (temperature, wind, boundary layer height, etc.) from NetCDF files for the years 2009–2020.
 
@@ -30,10 +31,14 @@ The scripts are numbered sequentially. Please run them in the following order:
 
 To run this script, you must obtain the yearly weather files (e.g., weather_2009.nc) and place them in a local folder named data/weather_raw/.
 
+
+
 3. Feature Selection
 03a_FeatureSelection_bc_UB.R: Performs Recursive Feature Elimination (RFE) to identify the most important predictors for Black Carbon at Urban sites.
 
 03b_FeatureSelection_bc_RB.R: Performs the same RFE process for Rural sites.
+
+
 
 4. Model Training & Estimation
 04a_BC_estimation_UB.R: Trains the Stacked Ensemble model (Random Forest + XGBoost) for Urban sites and generates gap-filled BC estimates.
@@ -42,8 +47,12 @@ To run this script, you must obtain the yearly weather files (e.g., weather_2009
 
 04c_Compare_Methods.R: Compares the performance of the Machine Learning approach against baseline methods (Linear Regression and Inverse Distance Weighting).
 
+
+
 5. Visualization
 05_ploting_timeSeries_UBRB.R: Generates the final time-series plots, BC/PM ratio analysis, and seasonal trends presented in the paper.
+
+
 
 📦 Requirements
 All analysis was performed using R. The key packages required are:
@@ -58,11 +67,14 @@ saqgetr (AURN data download)
 
 raster / ncdf4 (Weather data processing)
 
+
+
 📄 Data Availability
 Air Quality Data: Publicly available from the UK Automatic Urban and Rural Network (AURN).
 
 Emissions Data: Available from the NAEI.
 
 Weather Data: ERA5 reanalysis data was used for meteorological variables.
+
 
 Author: I S Wong
