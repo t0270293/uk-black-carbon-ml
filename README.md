@@ -53,14 +53,9 @@ All analysis was performed using **R**. The key packages required are:
 
 * **Air Quality Data:** Publicly available from the UK [Automatic Urban and Rural Network (AURN)](https://uk-air.defra.gov.uk/).
 * **Emissions Data:** Available from the [NAEI](https://naei.beis.gov.uk/).
-* **Weather Data:** ERA5 reanalysis data was used for meteorological variables.
+* **Weather Data:** The meteorological data used (ERA5 reanalysis) could not be included due to size limits. It is available for download from the [Copernicus Climate Data Store (CDS)](https://cds.climate.copernicus.eu/). 
+    * *Note:* Researchers should download "ERA5 hourly data on single levels" covering the UK domain for years 2009–2020.
 
 ---
-Air Quality Data: Publicly available from the UK Automatic Urban and Rural Network (AURN).
-
-Emissions Data: Available from the NAEI.
-
-Weather Data: ERA5 reanalysis data was used for meteorological variables.
-
 
 Author: I S Wong
