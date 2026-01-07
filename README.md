@@ -56,7 +56,7 @@ All analysis was performed using **R**. The key packages required are:
 * **Weather Data:** ERA5 reanalysis data was used for meteorological variables.
 
 ---
-**Author:** I S WongAir Quality Data: Publicly available from the UK Automatic Urban and Rural Network (AURN).
+Air Quality Data: Publicly available from the UK Automatic Urban and Rural Network (AURN).
 
 Emissions Data: Available from the NAEI.
 
