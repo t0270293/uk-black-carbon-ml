@@ -1,6 +1,6 @@
-# Improving Temporal and Spatial Coverage of UK Black Carbon Measurements
+# Improving Temporal and Spatial Coverage of UK Black Carbon Measurements Applying a Machine Learning Approach.
 
-### Applying a Machine Learning Approach (Paper 1)
+![Graphical Abstract](plots/Graphical%20abstract.png)
 
 This repository contains the R code and data processing pipeline for this article. It uses a machine learning approach (Stacked Ensemble of Random Forest and XGBoost) to estimate missing Black Carbon (BC) data at Urban and Rural Background sites across the UK between 2009 and 2020.
 
